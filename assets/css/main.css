@@ -3,7 +3,8 @@
 :root {
     --yellow-base: #FFF2C5;
     --yellow: #FFC805;
-    --row-pading: 15rem;
+    --row-pading: 10rem;
+    --font-color: #1F2124
 }
 
 html {
@@ -12,6 +13,8 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
+    color: var(--font-color);
+
 }
 
 h1, h2, h3, p {
@@ -23,7 +26,8 @@ h1 {
 }
 
 h2 {
-    font-size: 8rem;
+    font-size: 7rem;
+    font-weight: 500;
 }
 
 h3 {
@@ -67,7 +71,8 @@ h3.with_square:before {
 
 .row.header {
     justify-content: space-between;
-    gap: 2rem
+    gap: 2rem;
+    align-items: center;
 }
 
 .row.reverse {
@@ -75,6 +80,10 @@ h3.with_square:before {
 }
 
 .row.reverse  .number {
+    text-align: end;
+}
+
+.row.reverse h2 {
     text-align: end;
 }
 
@@ -86,15 +95,14 @@ header {
 
 header .number {
     font-size: 10.7rem;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .description {
     flex: 2
 }
 /* Navigation */
-#nav {
-}
+
 #nav .container {
     display: flex;
     justify-content: space-between;
@@ -147,10 +155,6 @@ header .number {
     top: 0;
 }
 
-#banner::before {
-
-}
-
 .banner_wrapper {
     background-color: var(--yellow-base);
     position: relative;
@@ -172,6 +176,7 @@ header .number {
     font-size: 8rem;
     text-align: start;
     font-weight: 500;
+    opacity: .85;
 }
 
 .banner_content p {
@@ -185,7 +190,7 @@ header .number {
 .banner_content img {
     position: relative;
     z-index: 2;
-    width: 47rem;
+    width: 60rem;
     margin-bottom: 20rem;
 }
 
@@ -213,4 +218,12 @@ header .number {
 
 #projects {
     background-color: var(--yellow-base);
+}
+
+.number.one {
+    opacity: .3;
+}
+
+.number.two {
+    opacity: .6;
 }
