@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --yellow-base: #FFF2C5;
+    --yellow: #FFC805;
+    --row-pading: 15rem;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 11rem;
+}
+
+h2 {
+    font-size: 8rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 2.7rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3.with_square:before {
+    content: '';
+    width: 2.6rem;
+    height: 2.6rem;
+    background-color: var(--yellow);
+    display: inline-block;
+    position: relative;
+    top: -1rem;
+    left: -1rem;
+}
+
+.container {
+    width: 124rem;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--row-pading)
+}
+
+.row.header {
+    justify-content: space-between;
+    gap: 2rem
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+.row.reverse  .number {
+    text-align: end;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header .number {
+    font-size: 10.7rem;
+    font-weight: 700;
+}
+
+.description {
+    flex: 2
+}
+/* Navigation */
+#nav {
+}
+#nav .container {
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+    align-items: center;
+}
+
+.logo_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_wrapper img {
+    width: 7rem;
+}
+
+.navigation {
+    display: flex;
+    font-size: 2.2rem;
+    gap: 2rem;
+
+}
+
+/* Banner */
+#banner {
+    position: relative;
+}
+#banner::before {
+    content: '';
+    width: 60rem;
+    height: 66rem;
+    background-color: var(--yellow);
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20rem;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+#banner::after {
+    content: '';
+    width: 60rem;
+    height: 100%;
+    background-color: var(--yellow-base);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.banner_wrapper {
+    background-color: var(--yellow-base);
+    position: relative;
+    left: 10rem;
+}
+
+.banner_content {
+    position: relative;
+    left: -10rem;
+    z-index: 1;
+    text-align: center;
+}
+
+.banner_content h1 {
+    position: absolute;
+    bottom: 20rem;
+    width: 300px;
+    z-index: 3;
+    font-size: 80px;
+    text-align: start;
+}
+
+.banner_content p {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 300px;
+    text-align: start;
+}
+
+.banner_content img {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    margin-bottom: 20rem;
+}
+
+
+
+/*About me*/
+
+/*Projects*/
+
+#projects {
+    background-color: var(--yellow-base);
+}
