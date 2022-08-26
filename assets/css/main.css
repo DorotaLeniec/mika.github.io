@@ -220,6 +220,10 @@ header .number {
     background-color: var(--yellow-base);
 }
 
+.project_wrapper h3{
+    margin-bottom: 3rem;
+}
+
 .number.one {
     opacity: .3;
 }
