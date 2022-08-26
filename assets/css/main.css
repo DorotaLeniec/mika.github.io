@@ -200,7 +200,7 @@ header .number {
     bottom: 0;
     z-index: 2;
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
     padding-left: 20rem;
 }
