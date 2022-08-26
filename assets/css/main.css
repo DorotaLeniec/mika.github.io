@@ -148,16 +148,7 @@ header .number {
 }
 
 #banner::before {
-    content: '';
-    width: auto;
-    height: 20rem;
-    background-color: white;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    left: 74rem;
-    bottom: 0;
-    z-index: 3;
+
 }
 
 .banner_wrapper {
@@ -196,6 +187,22 @@ header .number {
     z-index: 2;
     width: 47rem;
     margin-bottom: 20rem;
+}
+
+.links {
+    width: auto;
+    height: 20rem;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 74rem;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-left: 20rem;
 }
 
 
