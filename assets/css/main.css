@@ -228,7 +228,6 @@ header .number {
     display: flex;
     gap: 3rem;
     width: 100%;
-    border: solid;
 }
 
 .project_wrapper.reverse {
