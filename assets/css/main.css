@@ -266,11 +266,15 @@ header .number {
     background-color: var(--yellow-base);
 }
 
-.row.paintings {
+.row.hobby {
     margin: var(--row-padding) 0;
     padding: 0;
     gap: 5rem;
     justify-content: space-between;
+}
+
+.row.hobby:nth-child(2n) {
+    margin-top: 20rem;
 }
 
 .hobby_header {
@@ -291,10 +295,6 @@ header .number {
 
 #contact .row {
     flex-direction: column;
-}
-
-.contact_header {
-    
 }
 
 .contacts {
