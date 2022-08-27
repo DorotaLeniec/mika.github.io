@@ -3,7 +3,7 @@
 :root {
     --yellow-base: #FFF2C5;
     --yellow: #FFC805;
-    --row-pading: 10rem;
+    --row-padding: 10rem;
     --font-color: #1F2124
 }
 
@@ -47,15 +47,19 @@ a {
     color: inherit;
 }
 
+h3.with_square {
+    position: relative;
+}
+
 h3.with_square:before {
     content: '';
     width: 2.6rem;
     height: 2.6rem;
     background-color: var(--yellow);
     display: inline-block;
-    position: relative;
-    top: -1rem;
-    left: -1rem;
+    position: absolute;
+    top: -1.3rem;
+    left: -3.3rem;
 }
 
 .container {
@@ -66,7 +70,7 @@ h3.with_square:before {
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: var(--row-pading)
+    padding: var(--row-padding);
 }
 
 .row.header {
@@ -101,7 +105,7 @@ header .number {
 .description {
     flex: 2
 }
-/* Navigation */
+/*********************************** Navigation *********************************************/
 
 #nav .container {
     display: flex;
@@ -126,7 +130,7 @@ header .number {
 
 }
 
-/* Banner */
+/*********************************** Banner *********************************************/
 #banner {
     position: relative;
 }
@@ -212,15 +216,39 @@ header .number {
 
 
 
-/*About me*/
+/*********************************** About me *********************************************/
 
-/*Projects*/
+/*********************************** Projects *********************************************/
 
 #projects {
     background-color: var(--yellow-base);
 }
 
-.project_wrapper h3{
+.project_wrapper {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+    border: solid;
+}
+
+.project_wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.project_wrapper.reverse .projects {
+    text-align: start;
+}
+
+.project_header {
+    flex: 1;
+    padding: 4rem 0 0 4rem;
+}
+
+.projects {
+    flex: 2;
+    text-align: end;
+}
+.project_header h3{
     margin-bottom: 3rem;
 }
 
@@ -230,4 +258,46 @@ header .number {
 
 .number.two {
     opacity: .6;
+}
+
+/*********************************** Hobby *********************************************/
+
+#hobby {
+    background-color: var(--yellow-base);
+}
+
+.row.paintings {
+    margin: var(--row-padding) 0;
+    padding: 0;
+    gap: 5rem;
+    justify-content: space-between;
+}
+
+.hobby_header {
+    padding: 10rem;
+}
+
+.paint_wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+/*********************************** Contact *********************************************/
+
+#contact {
+    background-color: var(--yellow-base);
+}
+
+#contact .row {
+    flex-direction: column;
+}
+
+.contact_header {
+    
+}
+
+.contacts {
+    display: flex;
+    padding: 50px;
 }
