@@ -259,6 +259,7 @@ header .number {
 .projects {
     flex: 2;
     text-align: end;
+    position: relative;
 }
 .project_header h3{
     margin-bottom: 3rem;
@@ -270,6 +271,35 @@ header .number {
 
 .number.two {
     opacity: .6;
+}
+
+.img_laptop {
+    height: 40rem;
+    width: 60rem;
+}
+
+
+.img_laptop:nth-child(2n) {
+    position: relative;
+    bottom: 10rem;
+    left: -27rem;
+}
+
+.img_phone {
+    height: 50rem;
+    width: 30rem;
+}
+
+.img_phone:nth-child(2n) {
+    position: relative;
+    bottom: -15rem;
+    left: 6.5rem;
+}
+
+.img_phone:nth-child(3n) {
+    position: relative;
+    top: 6.5rem;
+    left: 7.5rem;
 }
 
 /*********************************** Hobby *********************************************/
