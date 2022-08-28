@@ -223,6 +223,10 @@ header .number {
     cursor: pointer;
 }
 
+.icon_arrow.back {
+    transform: rotate(180deg);
+}
+
 
 
 /*********************************** About me *********************************************/
